@@ -32,6 +32,8 @@
     
 }
 
+
+
 .sirin-stencil-regular {
     font-family: "Sirin Stencil", sans-serif;
     font-weight: 400;
@@ -83,6 +85,17 @@ header { display: flex;
         0 0 35px rgb(126, 2, 2);
 }
 
+.nb1:hover, .nb2:hover, .nb3:hover {
+    color: rgb(126,2,2);
+    text-shadow:
+    0 0 15px rgb(0, 0, 0.689),
+    0 0 20px rgb(0, 0, 0.689),
+    0 0 25px rgb(0, 0, 0.689),
+    0 0 30px rgb(0, 0, 0.689),
+    0 0 35px rgb(0, 0, 0.689);
+}
+
+
 
 .button {
         padding: 10px;
@@ -90,6 +103,11 @@ font-family:sirin stencil ;
 background-color: white;
 font-size: 200%;
 border: 2px solid black;}
+
+.button:hover {
+    color: white;
+    background-color: rgb(126, 2, 2);
+}
 
 .wrapper {display: flex;
 justify-content: center;
