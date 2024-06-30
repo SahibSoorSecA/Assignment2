@@ -1,3 +1,37 @@
+
+
+@media screen and (min-width: 480px) and (max-width: 768px) /* Allows the nav bar to change with different screen sizes*/
+{
+    .navbar {
+        background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.689) 25%, rgba(0, 0, 0, 0.689) 75%, transparent 100%);
+        padding: 1rem;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        list-style-type: none;
+        font-size: 300%;
+        font-family: 'Sirin Stencil', sans-serif;
+        display: flex;
+        justify-content: space-around;
+        text-shadow: 
+            0 0 15px rgb(126, 2, 2),
+            0 0 20px rgb(126, 2, 2),
+            0 0 25px rgb(126, 2, 2),
+            0 0 30px rgb(126, 2, 2),
+            0 0 35px rgb(126, 2, 2);
+    }
+    
+    .nb1, .nb2, .nb3 {
+        color: rgb(255, 255, 255);
+        text-shadow: 
+            0 0 15px rgb(126, 2, 2),
+            0 0 20px rgb(126, 2, 2),
+            0 0 25px rgb(126, 2, 2),
+            0 0 30px rgb(126, 2, 2),
+            0 0 35px rgb(126, 2, 2);
+    }
+    
+}
+
 .sirin-stencil-regular {
     font-family: "Sirin Stencil", sans-serif;
     font-weight: 400;
@@ -73,9 +107,45 @@ padding-top: 350px;}
   
   .wrapper2 footer {
     text-align: center; /* Center-align the text */
-    font-family: 'Sirin Stencil', sans-serif; /* Font family */
+    font-family: 'Sirin Stencil' ; /* Font family */
     font-size: 14px; /* Font size */
     margin-top: 1rem; /* Margin from the top */
     background-color: transparent; /* Transparent background */
     color: rgb(255, 255, 255); /* Text color */
+  }
+
+  form {
+    color: white;
+    font-size: larger;
+    font-family: 'Sirin Stencil';
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.689);
+    padding-bottom: 50px;
+  }
+  input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    width: 100%;
+    font-family: 'Sirin Stencil' ;
+    padding: 100px;
+    background-color: rgb(126, 2, 2);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  button:hover {
+    background-color: rgb(190, 4, 4);
   }
