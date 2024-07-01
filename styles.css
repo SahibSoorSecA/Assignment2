@@ -4,15 +4,15 @@
 {
     .navbar {
         background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.689) 25%, rgba(0, 0, 0, 0.689) 75%, transparent 100%);
-        padding: 1rem;
+        padding: 1rem;  /* Padding inside the navbar */
         text-align: center;
         color: rgb(255, 255, 255);
         list-style-type: none;
         font-size: 300%;
         font-family: 'Sirin Stencil', sans-serif;
-        display: flex;
-        justify-content: space-around;
-        text-shadow: 
+        display: flex; /* Flexbox layout for child elements */
+        justify-content: space-around; /* Distribute space evenly around items */
+        text-shadow:  /* Text shadow for glowing effect */
             0 0 15px rgb(126, 2, 2),
             0 0 20px rgb(126, 2, 2),
             0 0 25px rgb(126, 2, 2),
@@ -21,8 +21,8 @@
     }
     
     .nb1, .nb2, .nb3 {
-        color: rgb(255, 255, 255);
-        text-shadow: 
+        color: rgb(255, 255, 255); /* Text color */
+        text-shadow:    /* Text shadow for glowing effect */
             0 0 15px rgb(126, 2, 2),
             0 0 20px rgb(126, 2, 2),
             0 0 25px rgb(126, 2, 2),
@@ -33,15 +33,19 @@
 }
 
 
-
+/* Font family for 'Sirin Stencil' */
 .sirin-stencil-regular {
     font-family: "Sirin Stencil", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
-body {background-image: url(pfhZqi.jpg) ;
-background-size: cover;
-background-repeat: no-repeat;}  
+body {background-image: url(pfhZqi.jpg) ;/* Background image for the body */
+
+background-size: cover;/* Cover the entire viewport */
+background-repeat: no-repeat;}  /* Prevent repeating of the image */
+}
+
+/* Header styles */
 
 header { display: flex;
     font-family: sirin stencil;
@@ -96,6 +100,7 @@ header { display: flex;
 }
 
 
+/* Button styles */
 
 .button {
         padding: 10px;
@@ -104,15 +109,20 @@ background-color: white;
 font-size: 200%;
 border: 2px solid black;}
 
+/* Hover effect for buttons */
+
 .button:hover {
-    color: white;
-    background-color: rgb(126, 2, 2);
+    color: white;/* Change text color on hover */
+    background-color: rgb(126, 2, 2);/* Change background color on hover */
 }
+
+/* Wrapper for centering content */
 
 .wrapper {display: flex;
 justify-content: center;
 padding-top: 350px;}
 
+/* Wrapper for the footer */
 
 .wrapper2 {
     display: flex;
@@ -143,7 +153,7 @@ padding-top: 350px;}
     background-color: rgba(0, 0, 0, 0.689);
     padding-bottom: 50px;
   }
-  input[type="text"], input[type="email"], input[type="password"] {
+  input[type="text"], input[type="email"], input[type="password"] { /* Input field styles */
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -151,6 +161,8 @@ padding-top: 350px;}
     border: 1px solid #ccc;
     border-radius: 4px;
   }
+
+  /* Button styles within the form */
 
   button {
     width: 100%;
@@ -164,6 +176,10 @@ padding-top: 350px;}
     cursor: pointer;
     font-size: 16px;
   }
+
+
+  /* Hover effect for form buttons */
+
   button:hover {
     background-color: rgb(190, 4, 4);
   }
@@ -206,6 +222,8 @@ font-family:  'Sirin Stencil';}
     text-decoration: underline;
   }
 
+  /* Additional card styles for alignment and layout */
+
   .card1, .card2, .card3 {
     display: flex;
     flex-direction: column;
@@ -215,6 +233,10 @@ font-family:  'Sirin Stencil';}
     width: 400px;
     background-color: #f0f0f000;
   }
+
+
+  /* Styles for text overlay on hover */
+
   .card-textimage {
     position: relative;
     width: 400px;
@@ -241,9 +263,14 @@ font-family:  'Sirin Stencil';}
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
   }
+
+  /* Hover effect to turn image to text */
   .card-textimage:hover img {
     opacity: 0;
   }
+
+  /* Hover effect to show text overlay */
+
   .card-textimage:hover .text-overlay {
     opacity: 1;
   }
