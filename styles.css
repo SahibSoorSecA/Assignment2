@@ -167,3 +167,90 @@ padding-top: 350px;}
   button:hover {
     background-color: rgb(190, 4, 4);
   }
+
+  .cards {display: flex;
+justify-content: space-evenly;
+padding-bottom: 300px;
+font-family:  'Sirin Stencil';}
+
+  .card1, .card2, .card3 {
+
+    width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 1rem;
+  }
+  .card-header {
+    width: 400px;
+    font-family:  'Sirin Stencil';
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  .card-body {
+    padding: 20px;
+  }
+  .card-footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+  }
+  .card-footer a {
+    color: #000000;
+    text-decoration: none;
+  }
+  .card-footer a:hover {
+    text-decoration: underline;
+  }
+
+  .card1, .card2, .card3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 400px;
+    background-color: #f0f0f000;
+  }
+  .card-textimage {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .card-textimage img {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .card-textimage .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .card-textimage:hover img {
+    opacity: 0;
+  }
+  .card-textimage:hover .text-overlay {
+    opacity: 1;
+  }
+  .text-overlay p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .bigwrap {display: flex;
+flex-direction: column;}
